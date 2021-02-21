@@ -1,15 +1,8 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import {MainLayout} from "../layouts/MainLayout";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export default function Index() {
 
-export default IndexPage
+    return <MainLayout title={'MoscOwl'}>
+        <h1>Главная страница</h1>
+    </MainLayout>
+}
